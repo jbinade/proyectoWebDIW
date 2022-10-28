@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 :root{
   --font-style:'Nunito Sans', sans-serif;
@@ -194,10 +195,91 @@ body{
   background-color: var(--color-negro);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  display: flex;
+  color: #fff;
+  padding: 20px;
 }
 
-.footer p{
-  color: var(--color-blanco);
+.footer .marca{
+  flex-basis: 25%;
+  padding: 20px;
+}
+
+.footer .legal{
+  flex-basis: 25%;
+  padding: 20px;
+}
+
+.footer .menu{
+  flex-basis: 25%;
+  padding: 20px;
+
+}
+
+.footer .rrss{
+  flex-basis: 25%;
+  padding: 20px;
+}
+
+.rrss ul {
+  display: flex;
+  /*flex-direction: column;*/
+  align-items:center;
+  justify-content: center;
+  padding: 0;
+}
+
+.rrss ul div {
+  width: 20px;
+  height: 5px;
+  background-color: var(--color-letra2);
+  margin: auto;
+}
+
+.rrss ul li {
+  position: relative;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.rrss ul li a{
+  text-decoration: none;
+}
+
+.rrss ul li span {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  background: #2a2a2a;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px !important;
+  transition: 1.5s ease-out;
+}
+
+.rrss ul li:hover span {
+  transition: .3s;
+}
+
+.rrss ul li:nth-child(2):hover span {
+  background: #2C3456 !important;
+  align-self: flex-end;
+}
+
+.rrss ul li:nth-child(3):hover span {
+  background: #6A9AEE !important;
+}
+
+.rrss ul li:nth-child(4):hover span {
+  background: #CC296C !important;
+}
+
+.rrss ul li:nth-child(5):hover span {
+  background: #2C3456 !important;
 }
 
 
