@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+
+:root{
+  --font-style:'Nunito Sans', sans-serif;
+  --color-fondo:#C6CBD7;
+  --color-principal: #D9D9D9;
+  --color-negro: #0D0C0F;
+  --color-blanco: #fff;
+  --color-letra2: #6F5946;
+  }
+
+body{
+  background-color: var(--color-fondo);
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+    /*margin: 0;
+    padding: 2rem;*/
+  }
+
+
+.header{
+    background-color: var(--color-negro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+.header .logo{
+  flex-basis: 55%;
+  padding-left: 20px;
+}
+
+.header .logo img{
+  border:  0.1px solid var(--color-negro);
+  box-shadow: 0 4px 8px 0 var(--color-letra2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 400px;
+  background-color: var(--color-negro);
+}
+
+.header .menu{      /*INICIO MENU*/
+  flex-basis: 45%;
+}
+
+.header .menu ul{
+    margin: 5%;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 25px 0;
+    border-radius: 25px;
+    border: 0.1px solid var(--color-negro);
+    background-color: #18181B;
+    box-shadow: 0 4px 8px 0 var(--color-letra2), 0 6px 20px 0
+                rgba(0, 0, 0, 0.19);
+  }
+
+.header .menu ul li{
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  }
+
+.header .menu ul li a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  }
+
+.header .menu ul li::after{
+  display: block;
+  content: '';
+  border-bottom: solid 1px var(--color-letra2);
+  padding-bottom: 1%;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  }
+
+.header .menu ul li:hover::after{
+  transform: scaleX(1);
+  }                         /*FIN MENU*/
+
+/*FIN HEADER*/
+
+/*INICIO*/
+
+.intro{
+  display: flex;
+  padding: 40px;
+  background-color: var(--color-principal);
+  font: var(--font-style);
+}
+
+.intro h1{
+  color: var(--color-negro);
+}
+
+.intro p{
+  text-align: center;
+}
+
+.imagen-chica {
+  border-radius: 5%;
+}
+
+
+/*APARTADO CAFÉS*/
+
+.tipos-cafe {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: var(--color-negro);
+  
+}
+
+.tipos-cafe H3 {
+  text-align: center;
+  color: var(--color-letra2);
+}
+
+.tipos-cafe p {
+  text-align: center;
+  color: var(--color-blanco);
+}
+
+.grilla {
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.grilla {
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.tarjeta {
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
+  grid-column-end: span 4;
+  padding: 2rem;
+  background-color: var(--color-negro);
+  color: #ffff;
+  }
+  
+.tarjeta img {
+  border-radius: 5%;
+  max-width: 20rem;
+  width: 100%;
+  -webkit-transition:all .9s ease; /* Safari y Chrome *//*Para un efecto de zoom en las imagenes*/
+  -moz-transition:all .9s ease; /* Firefox */
+  -o-transition:all .9s ease; /* IE 9 */
+  -ms-transition:all .9s ease; /* Opera */
+
+  }
+  
+.tarjeta:hover img {
+  -webkit-transition:scale(1.15); /* Safari y Chrome */
+  -moz-transition:scale(1.25); /* Firefox */
+  -o-transition:scale(1.15); /* IE 9 */
+  -ms-transition:scale(1.25);/* Opera */
+  transform: scale(1.15);
+  
+    }
+
+ /*BLOG*/ /*Hay una separación entre la sección de tipos de cafe y el blog que no logro eliminar*/
+.blog {
+  text-align: center;
+  background-color: var(--color-principal);
+  margin: 0 auto;
+  }
+
+.blog h3{
+  color: var(--color-letra2);
+}
+
+.blog p{
+  color: var(--color-negro);
+}
+
+/*FOOTER*/  
+.footer{
+  background-color: var(--color-negro);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.footer p{
+  color: var(--color-blanco);
+}
+
+
+/* Las reglas que estén dentro de la media query se van a aplicar */
+/* solo cuando la ventana del navegador sea menor o igual a 48rem */
+@media (max-width: 48rem) {
+
+    /* Con este selector indicamos que ese estilo debe aplicarse a */
+    /* TODOS los elementos que sean hijos directos de la grilla */
+    .grilla > * {
+      grid-column-end: span 12;
+    }
+  
+    /* El primer valor corresponde al hueco entre filas */
+    /* El segundo valor corresponde al hueco entre columnas */
+    .grilla {
+      grid-gap: 2rem 0;
+    }
+  }
+
+  .ver-mas {
+    grid-column-start: 1;
+  }
+
+  body {
+    padding: 1rem;
+  }
+  
+  .titulo {
+    font-size: 3rem;
+  }
