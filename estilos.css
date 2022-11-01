@@ -108,24 +108,107 @@ p,ul,li,a{
   flex-direction: row;
   padding: 40px;
   background-color: var(--color-principal);
-  font: var(--font-style);
   justify-content: space-between;
+  
 }
 
 .intro .intro-texto{
   flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  margin: auto;
+  
+}
+
+.intro .intro-texto h4{
+  color: var(--color-letra2);
+  font-size: 36px;
+  margin-bottom: 0%;
 }
 
 .intro .intro-texto h1{
   color: var(--color-negro);
+  font-size: 64px;
+  margin-top: 0%;
 }
 
 .intro p{
-  text-align: center;
+  text-align:justify;
+  font-size: 36px;
+  margin-right: 20px;
+}
+
+.opciones{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.opciones .btnElige{
+  margin-top: 1rem;
+  display: inline-block;
+  align-self: center;
+  padding: 10px;
+  
+
+  color: var(--color-blanco);
+  text-decoration: none;
+  
+
+  max-width: 150px;
+  margin: 20px;
+
+  border-radius: .5rem;
+  border:.2rem solid var(--color-blanco);
+
+  cursor: pointer;
+  background-color: var(--color-negro);
+  
+}
+
+.opciones .btnElige:hover{
+  color: var(--color-negro);
+  background-color: var(--color-blanco);
+  border:.2rem solid var(--color-negro);
+
+}
+
+.opciones .btnReserva{
+  margin-top: 1rem;
+  display: inline-block;
+  align-self: center;
+  padding: 10px;
+  
+
+  color: var(--color-negro);
+  text-decoration: none;
+  
+
+  max-width: 150px;
+  margin: 20px;
+
+  border-radius: .5rem;
+  border:.2rem solid var(--color-blanco);
+
+  cursor: pointer;
+  background-color: var(--color-blanco);
+  
+}
+
+.opciones .btnReserva:hover{
+  color: var(--color-blanco);
+  background-color: var(--color-negro);
+  border:.2rem solid var(--color-blanco);
+
 }
 
 .intro-img{
   flex-basis: 50%;
+  
+  padding: auto;
+  margin: auto;
   
 }
 
