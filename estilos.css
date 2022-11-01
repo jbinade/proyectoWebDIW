@@ -190,6 +190,9 @@ body{
 
  /*BLOG*/ /*Hay una separación entre la sección de tipos de cafe y el blog que no logro eliminar*/
 .blog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   background-color: var(--color-principal);
   margin: 0 auto;
@@ -197,11 +200,81 @@ body{
 
 .blog h3{
   color: var(--color-letra2);
+  font-size: 64px;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 .blog p{
   color: var(--color-negro);
+  font-size: 26px;
 }
+
+.media {
+  background: var(--color-principal);
+  /*border: 1px solid #e5e5e5;*/
+  max-width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+
+.media-reverse {
+  background: var(--color-principal);
+  /*border: 1px solid #e5e5e5;*/
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content:center;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.media-content {
+  padding: 20px;
+  
+}
+
+.media-title{
+  font-size: 36px;
+}
+
+.media-content .media-description{
+  font-size: 24px;
+  text-align: justify;
+}
+
+.media-img-container {
+  padding: 20px 20px 0 20px;
+}
+
+.media-img-item {
+  width: 400px;
+  
+  
+}
+
+.media-title,
+.media-description {
+  margin: 0;
+  padding: 0;
+}
+
+.media-description {
+  margin-top: 4px;
+  padding-bottom: 20px;
+}
+
+
 
 /*FOOTER*/  
 .footer{
