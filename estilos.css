@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto:ital,wght@1,300&display=swap');
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 
 :root{
   --font-style:'Nunito Sans', sans-serif;
+  --font-titles:'Roboto', sans-serif;
   --color-fondo:#C6CBD7;
   --color-principal: #D9D9D9;
   --color-negro: #0D0C0F;
@@ -23,6 +26,13 @@ body{
     padding: 2rem;*/
   }
 
+h1,h2,h3,h4{
+  font-family:var(--font-titles);
+}
+
+p,ul,li,a{
+  font-family: var(--font-style);
+}
 
 .header{
     background-color: var(--color-negro);
@@ -124,6 +134,9 @@ body{
   height: 75%;
 }
 
+/*APARTADO INICIO2*/
+      /*AQUÍ IRIA EL APARTADO QUE FALTA*/
+/*FIN INICIO2*/
 
 /*APARTADO CAFÉS*/
 
@@ -137,11 +150,16 @@ body{
 .tipos-cafe H3 {
   text-align: center;
   color: var(--color-letra2);
+  font-size: 64px;
+  margin: auto;
 }
 
 .tipos-cafe p {
   text-align: center;
   color: var(--color-blanco);
+  font-size: 36px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .grilla {
@@ -167,7 +185,19 @@ body{
   background-color: var(--color-negro);
   color: #ffff;
   }
-  
+
+.tarjeta h4{
+  font-size: 32px;
+  margin-bottom: 0%;
+}
+
+.tarjeta p{
+  font-size: 24px;
+  margin-bottom: 0%;
+  padding: auto;
+  text-align: center;
+}
+
 .tarjeta img {
   border-radius: 5%;
   max-width: 20rem;
@@ -186,6 +216,30 @@ body{
   -ms-transition:scale(1.25);/* Opera */
   transform: scale(1.15);
   
+    }
+  .tarjeta .btn{
+      margin-top: 1rem;
+      display: inline-block;
+      align-self: center;
+      padding: 0 auto;
+      
+    
+      color: var(--color-blanco);
+      font-size: 1rem;
+    
+      max-width: 100px;
+      margin: 20px;
+    
+      border-radius: .5rem;
+      border:.5rem solid var(--color-letra2);
+    
+      cursor: pointer;
+      background-color: var(--color-letra2);
+      
+    }
+    
+    .tarjeta .btn:hover{
+      color: var(--color-blanco);
     }
 
  /*BLOG*/ /*Hay una separación entre la sección de tipos de cafe y el blog que no logro eliminar*/
@@ -208,6 +262,30 @@ body{
 .blog p{
   color: var(--color-negro);
   font-size: 26px;
+}
+
+.blog .btn{
+  margin-top: 1rem;
+  display: inline-block;
+  align-self: center;
+  padding: .8rem 3rem;
+
+  color: var(--color-letra2);
+  font-size: 1.7rem;
+
+  max-width: 150px;
+  margin: 20px;
+
+  border-radius: .5rem;
+  border:.5rem solid var(--color-negro);
+
+  cursor: pointer;
+  background-color: var(--color-blanco);
+  
+}
+
+.blog .btn:hover{
+  color: var(--color-negro);
 }
 
 .media {
