@@ -4,187 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Cafés JERCAM</title>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">
-      <img src="img/logo1.svg" alt="Logo de café JERCAM">
-    </div>
-    <div class="menu">
-      <ul>
-        <li><a href="#">Caf&eacute;s</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Log in</a></li>
-        <li><a href="#"><img src="img/bx-cart 1.png" alt=""></a></li>
-        </ul>
-      </div>
-  </div>
-  
-  <div class="intro">
-    <div class="intro-texto">
-      <h4>Cafés JERCAM</h4>
-      <h1>DISFRUTA DEL MEJOR CAFÉ<img src="img/bxs-coffee-bean 1.svg" alt="grano de café"></h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Dolorum maiores ex eligendi perspiciatis accusantium suscipit, 
-        repellendus, sint alias rem cum velit neque, voluptas quam? 
-        Explicabo quia sit modi cupiditate. Earum.</p>
-        <div class="opciones">
-          <a href="#" class="btnElige">Elige el tuyo</a>
-          <a href="#" class="btnReserva">Reservas</a>
-        </div>
-    </div>
-    <div class="intro-img">
-      <img class="imagen-chica" src="img/tomandoCafe.jpg" alt="Una persona tomando cafe sentada mirando al frente">
-    </div>
-  </div>
-  
-<!--Aquí faltaria una section o div-->
 
-  <section class="tipos-cafe">
-        <h3>Caf&eacute;s</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Adipisci ea consequuntur ipsum cum, dolorem voluptatum!</p>
-        <div class="grilla">
-          <div class="tarjeta">
-            <img src="img/expresso.jpg" alt="Una taza con café expresso"/>
-            <h4>Espresso</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ullam.</p>
-            <a href="https://es.wikipedia.org/wiki/Caf%C3%A9_expreso" class="btn">Seleccionar</a>
-          </div>
-          <div class="tarjeta">
-            <img src="img/ristretto.jpg" alt="Una taza con café ristretto"/>
-            <h4>Ristretto</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, neque!</p>
-            <a href="https://es.wikipedia.org/wiki/Ristretto" class="btn">Seleccionar</a>
-          </div>
-          <div class="tarjeta">
-            <img src="img/americano.jpg" alt="Una taza con café americano"/>
-            <h4>Americano</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, numquam.</p>
-            <a href="#" class="btn">Seleccionar</a>
-          </div>
-          <div class="tarjeta">
-            <img src="img/machiato.jpg" alt="Una taza con café machiato"/>
-            <h4>Macchiato</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, itaque.</p>
-            <a href="https://es.wikipedia.org/wiki/Caff%C3%A8_macchiato" class="btn">Seleccionar</a>
-          </div>
-          <div class="tarjeta">
-            <img src="img/mocca.jpg" alt="Una taza con café mocca"/>
-            <h4>Mocca</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nisi.</p>
-            <a href="#" class="btn">Seleccionar</a>
-          </div>
-          <div class="tarjeta">
-            <img src="img/capuccino.jpg" alt="Una taza con café capuccino"/>
-            <h4>Capuccino</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero.</p>
-            <a href="https://es.wikipedia.org/wiki/Capuchino_(caf%C3%A9)" class="btn">Seleccionar</a>
-          </div>
+  <header class="header">
+    <div class="navegacion">
+        <div>
+            <a href="index.html"><img src="img/logo1.svg" alt="Logo de café JERCAM"></a>
         </div>
-      </section>
 
-  <section class="blog">
-    <h3>Nuestro blog</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <nav class="menu">
+            <a class="navegacion-enlace" href="#">Caf&eacute;s</a>
+            <a class="navegacion-enlace" href="#">Blog</a>
+            <a class="navegacion-enlace" href="#">Nosotros</a>
+            <a class="navegacion-enlace" href="#">Log in</a>
+            <a class="navegacion-enlace navegacion-enlace-carrito" href="#"><img src="img/bx-cart 1.png" alt=""></a>
+        </nav>
+    </div>
+  </header>
+  
+  <main class="main">
+      <div class="intro1">
+              <div class="intro1-contenido">
+                  <h1>DISFRUTA DEL MEJOR CAFÉ<img src="img/bxs-coffee-bean 1.svg" alt="grano de café"></h1>
+                  <p class="intro1-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Dolorum maiores ex eligendi perspiciatis accusantium suscipit, 
+                  repellendus, sint alias rem cum velit neque, voluptas quam? 
+                  Explicabo quia sit modi cupiditate. Earum.</p>
+                  <div class="intro-btn">
+                      <a href="#" class="btnElige">Elige el tuyo</a>
+                      <a href="#" class="btnReserva">Reservas</a>
+                  </div>
+              </div>
+
+              <div class="intro1-img">
+                  <img class="intro1-img-chica" src="img/tomandoCafe.jpg" alt="Una persona tomando cafe sentada mirando al frente">
+              </div>
+          
+      </div>  
       
-      <div class="media">
-        <div class='media-img'>
-          <img class='db media-img-item' src="img/blog1.jpg" alt="Dos muestras de café molido y en granos"/>
-        </div>
-      <div class='media-content'>
-        <h4 class='media-title'>Tipos de granos de caf&eacute;  </h4>
-        <p class='media-description'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit culpa voluptatum mollitia, similique eius obcaecati, odit neque modi, quos quas optio dicta voluptatibus perspiciatis excepturi nesciunt earum a. Suscipit, molestiae.</p>
-      </div>
-    </div>
-
-    <div class='media-reverse'>
-      <div class='media-img'>
-        <img class='db media-img-item' src='img/cafeGranos.jpg'>
-      </div>
-      <div class='media-content'>
-        <h4 class='media-title'>Beneficios del caf&eacute; </h4>
-        <p class='media-description'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit culpa voluptatum mollitia, similique eius obcaecati, odit neque modi, quos quas optio dicta voluptatibus perspiciatis excepturi nesciunt earum a. Suscipit, molestiae.</p>
-      </div>
-    </div>
-
-      <div class='media'>
-        <div class='media-img'>
-          <img class='db media-img-item' src='img/cafeGalletas.jpg'>
-        </div>
-        <div class='media-content'>
-          <h4 class='media-title'>Recetas de caf&eacute;  </h4>
-          <p class='media-description'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit culpa voluptatum mollitia, similique eius obcaecati, odit neque modi, quos quas optio dicta voluptatibus perspiciatis excepturi nesciunt earum a. Suscipit, molestiae.</p>
-        </div>
+      <div class="intro2">
+              <p class="intro2-local intro2-local-marcas">50 <span class="intro2-plus">+</span><span class="intro2-span">Marcas de café</span></p> 
+              <p class="intro2-local intro2-local-profesionales">25 <span class="intro2-plus">+</span><span class="intro2-span">Profesionales</span></p>
+              <p class="intro2-local intro2-local-locales">15 <span class="intro2-plus">+</span><span class="intro2-span">Locales</span></p> 
       </div>
 
-      <a href="#" class="btn">¡Leer m&aacute;s!</a>
-  </section>
-
-  <section class="footer">
-        
-        <div class="marca">
+      <div class="intro3">
+              <div class="intro3-img">
+                  <img class="intro3-img-paleta" src="img/paletasCafe.jpg" alt="paletas de café">
+              </div>
+              
+              <div class="intro3-contenido">
+                  <h2>Elige tu café favorito</h2>
+                  <p class="intro3-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Dolorum maiores ex eligendi perspiciatis accusantium suscipit, 
+                  epellendus, sint alias rem cum velit neque, voluptas quam? 
+                  Explicabo quia sit modi cupiditate. Earum. Lorem ipsum,
+                  dolor sit amet consectetur adipisicing elit. Dicta delectus blanditiis
+                  aperiam reiciendis.</p>
+              </div>  
+      </div>
+  
+      <div class="tipos-cafe">
+          <h3>Caf&eacute;s</h3>
+          <p>En nuestra selección de cafés encontrarás desde los sabores más puros e intensos a los 
+          más suaves viviendo una experiencia única.</p>
+          <div class="grilla">
+              <div class="tarjeta">
+                  <img src="img/expresso.jpg" alt="Una taza con café expresso"/>
+                  <h4>Espresso</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ullam.</p>
+                  <a href="https://es.wikipedia.org/wiki/Caf%C3%A9_expreso" class="btn">Seleccionar</a>
+              </div>
+              <div class="tarjeta">
+                  <img src="img/ristretto.jpg" alt="Una taza con café ristretto"/>
+                  <h4>Ristretto</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, neque!</p>
+                  <a href="https://es.wikipedia.org/wiki/Ristretto" class="btn">Seleccionar</a>
+              </div>
+              <div class="tarjeta">
+                  <img class="cafe-americano" src="img/americano.jpg" alt="Una taza con café americano"/>
+                  <div>
+                    <h4>Americano</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ullam.</p>
+                    <a href="#" class="btn">Seleccionar</a> 
+                  </div>
+              </div>
+              <div class="tarjeta">
+                  <img src="img/machiato.jpg" alt="Una taza con café machiato"/>
+                  <h4>Macchiato</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, itaque.</p>
+                  <a href="https://es.wikipedia.org/wiki/Caff%C3%A8_macchiato" class="btn">Seleccionar</a>
+              </div>
+              <div class="tarjeta">
+                  <img src="img/mocca.jpg" alt="Una taza con café mocca"/>
+                  <h4>Mocca</h4>
+                  <p class="p-mocca">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nisi.</p>
+                  <a href="#" class="btn btn-mocca">Seleccionar</a>
+              </div>
+              <div class="tarjeta">
+                  <img src="img/capuccino.jpg" alt="Una taza con café capuccino"/>
+                  <h4>Capuccino</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero.</p>
+                  <a href="https://es.wikipedia.org/wiki/Capuchino_(caf%C3%A9)" class="btn">Seleccionar</a>
+              </div>
+          </div>
+      </div>
     
-          <img src="img/logo1.svg" alt="Logo de café JERCAM">
+      <div class="blog">
+          <h3>Nuestro blog</h3>
+            <p>Aprende de los expertos con las mejores recetas y consejos.</p>
+          
+          <article class="media">
+              <div class='media-img'>
+                  <img class='db media-img-item' src="img/blog1.jpg" alt="Dos muestras de café molido y en granos"/>
+              </div>
+              <div class='media-content'>
+                  <h4 class='media-title'>Tipos de granos de caf&eacute;  </h4>
+                  <p class='media-description'>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit culpa voluptatum mollitia, similique eius obcaecati, odit neque modi, quos quas optio dicta voluptatibus perspiciatis excepturi nesciunt earum a. Suscipit, molestiae.</p>
+             </div>
+          </article>
+    
+          <article class='media-reverse'>
+              <div class='media-img'>
+                  <img class='db media-img-item' src='img/cafeGranos.jpg'>
+             </div>
+            <div class='media-content'>
+                <h4 class='media-title'>Beneficios del caf&eacute; </h4>
+                <p class='media-description'>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit culpa voluptatum mollitia, similique eius obcaecati, odit neque modi, quos quas optio dicta voluptatibus perspiciatis excepturi nesciunt earum a. Suscipit, molestiae.</p>
+            </div>
+          </article>
+    
+          <article class='media'>
+              <div class='media-img'>
+                  <img class='db media-img-item' src='img/cafeGalletas.jpg'>
+              </div>
+              <div class='media-content'>
+                  <h4 class='media-title'>Recetas de caf&eacute;  </h4>
+                  <p class='media-description'>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit culpa voluptatum mollitia, similique eius obcaecati, odit neque modi, quos quas optio dicta voluptatibus perspiciatis excepturi nesciunt earum a. Suscipit, molestiae.</p>
+              </div>
+          </article>
+    
+          <a href="#" class="btn">¡Leer m&aacute;s!</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <div class="marca">
+            <img src="img/logo1.svg" alt="Logo de café JERCAM">
         </div>
 
         <div class="legal">
-          
-          <ul>
-            <li>Aviso legal</li>
-            <li>Pol&iacute;tica de privacidad</li>
-            <li>Pol&iacute;tica de cookies</li>
-          </ul>
+            <ul>
+                <li>Aviso legal</li>
+                <li>Pol&iacute;tica de privacidad</li>
+                <li>Pol&iacute;tica de cookies</li>
+            </ul>
         </div>
         
         <div class="menu">
-      
-          <ul>
-            <li>Conocenos</li>
-            <li>Donde encontrarnos</li>
-            <li>Trabaja con nosotros</li>
-            <li>Contactanos</li>
-
-          </ul>
+            <ul>
+                <li>Conocenos</li>
+                <li>Donde encontrarnos</li>
+                <li>Trabaja con nosotros</li>
+                <li>Contactanos</li>
+            </ul>
         </div>
-       
 
         <div class="rrss">
-         
-        <ul>
-          <div></div>
-          <li>
-              <a href="#">
-                  <span class="fa fa-facebook"></span>
-              </a>
-          </li>
-          <li>
-              <a href="#">
-                  <span class="fa fa-twitter"></span>
-              </a>
-          </li>
-          <li>
-              <a href="#">
-                  <span class="fa fa-instagram"></span>
-              </a>
-          </li>
-          <li>
-              <a href="#">
-                  <span class="fa fa-linkedin"></span>
-              </a>
-          </li>
-          <div></div>
-      </ul>
-    </div><!--fin redes sociales-->
-
-  </section><!--fin footer-->
-
-  <!--Pregunta al profesor ¿Diferencia entre declararlo un div, un section o un footer?-->
+            <ul>
+              <div></div>
+              <li>
+                  <a href="#">
+                      <span class="fa fa-facebook"></span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="fa fa-twitter"></span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="fa fa-instagram"></span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="fa fa-linkedin"></span>
+                  </a>
+              </li>
+              <div></div>
+            </ul>
+        </div><!--fin redes sociales-->
+    </footer><!--fin footer-->
 </body>
 </html>

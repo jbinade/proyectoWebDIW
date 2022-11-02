@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto:ital,wght@1,300&display=swap');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+
+:root{
+  --font-style:'Nunito Sans', sans-serif;
+  --font-titles:'Roboto', sans-serif;
+  --color-fondo:#C6CBD7;
+  --color-principal: #D9D9D9;
+  --color-negro: #0D0C0F;
+  --color-blanco: #fff;
+  --color-letra2: #6F5946;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--color-principal);
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4{
+  font-family:var(--font-titles);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  padding-left: 150px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  padding-right: 120px;
+  
+}
+
+p, ul, li, a{
+  font-family: var(--font-style);
+}
+
+/* Header y nav */
+
+.header {
+  background-color: var(--color-negro);
+  padding: 50px;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navegacion-enlace {
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.navegacion-enlace:hover {
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  border-bottom: solid 2px var(--color-letra2);
+  padding-bottom: 1%;
+}
+
+/* Intro */
+
+.intro1 {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.intro1-contenido {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.intro1-texto {
+  text-align: left;
+  padding-left: 150px;
+  line-height: 50px;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.intro1-img {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.intro1-img-chica {
+  height: 750px;
+  width: 480px;
+  padding-left: 30px;
+}       
+
+.intro-btn {
+  margin-top: 50px;
+  padding-top: 70px;
+  padding-left: 50px;
+  text-align: center;
+  
+}
+
+.btnElige {
+  margin-top: 1rem;
+  align-self: center;
+  padding: 20px;
+  color: var(--color-blanco);
+  background-color: var(--color-negro);
+  border:.2rem solid var(--color-blanco);
+  border-radius: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btnElige:hover {
+  color: var(--color-negro);
+  background-color: var(--color-blanco);
+  border:.2rem solid var(--color-negro);
+}
+
+.btnReserva {
+  margin-top: 1rem;
+  align-self: center;
+  padding: 20px;
+  padding-right: 35px;
+  padding-left: 35px;
+  text-decoration: none;
+  margin: 30px;
+  border-radius: 2rem;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--color-negro);
+  background-color: var(--color-blanco);
+  border:.2rem solid var(--color-negro);
+}
+
+.btnReserva:hover {
+  color: var(--color-blanco);
+  background-color: var(--color-negro);
+  border:.2rem solid var(--color-blanco);
+}
+
+.intro2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--color-negro);
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin-bottom: 0px
+  
+}
+
+.intro2-local {
+  color: var(--color-blanco);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro2-plus {
+  color: var(--color-letra2);
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.intro2-span {
+  display: block;
+}
+
+.intro2-local-marcas {
+  margin-left: 400px;
+  
+}
+
+.intro2-local-locales {
+  margin-right: 400px;
+  
+}
+
+.intro3 {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 80px;
+}
+
+.intro3-img {
+  flex: 1;
+  
+}
+
+.intro3-img-paleta {
+  height: 750px;
+  width: 550px;
+  
+}   
+
+.intro3-contenido {
+  flex: 1;
+  color: var(--color-negro);
+  text-align: center;
+  
+}
+
+.intro3-texto {
+  text-align: left;
+  line-height: 50px;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-right: 120px
+}
+
+/* Apartado cafe */
+
+.tipos-cafe {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: var(--color-negro);
+  
+}
+
+.tipos-cafe h3 {
+  text-align: center;
+  color: var(--color-letra2);
+  font-size: 70px;
+  margin-top: 120px;
+  
+}
+
+.tipos-cafe p {
+  text-align: center;
+  color: var(--color-blanco);
+  font-size: 36px;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 60px;
+}
+
+.grilla {
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.grilla {
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.tarjeta {
+  box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
+  grid-column-end: span 4;
+  padding: 2rem;
+  background-color: var(--color-negro);
+  color: #ffff;
+  }
+
+.tarjeta h4{
+  font-size: 32px;
+  margin-bottom: 0%;
+}
+
+.cafe-americano {
+  width: 326px;
+  height: 334.717px;
+}
+
+.tarjeta p{
+  font-size: 24px;
+  margin-bottom: 0%;
+  padding: auto;
+  text-align: center;
+}
+
+.tarjeta img {
+  max-width: 20rem;
+  width: 100%;
+  -webkit-transition:all .9s ease; /* Safari y Chrome *//*Para un efecto de zoom en las imagenes*/
+  -moz-transition:all .9s ease; /* Firefox */
+  -o-transition:all .9s ease; /* IE 9 */
+  -ms-transition:all .9s ease; /* Opera */
+  
+  }
+
+  .tarjeta:hover img {
+    -webkit-transition:scale(1.15); /* Safari y Chrome */
+    -moz-transition:scale(1.25); /* Firefox */
+    -o-transition:scale(1.15); /* IE 9 */
+    -ms-transition:scale(1.25);/* Opera */
+    transform: scale(1.15);
+  
+    }
+
+  .tarjeta .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    align-self: center;
+    padding: 0 auto;
+    
+  
+    color: var(--color-blanco);
+    font-size: 1rem;
+    font-weight: bold;
+  
+    max-width: 100px;
+    margin: 20px;
+  
+    border-radius: .5rem;
+    border:.5rem solid var(--color-letra2);
+  
+    cursor: pointer;
+    background-color: var(--color-letra2);
+    text-decoration: none;
+    
+  }
+  
+  .tarjeta .btn:hover{
+    color: var(--color-blanco);
+  }
+
+.p-mocca {
+  padding-bottom: 27px;
+}
+
+/* Blog */
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 120px;
+ 
+  }
+
+.blog h3{
+  color: var(--color-letra2);
+  font-size: 64px;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+
+.blog h4 {
+  text-align: left;
+}
+
+.blog p{
+  color: var(--color-negro);
+  font-size: 26px;
+  margin-bottom: 100px;
+}
+
+.blog .btn{
+  margin-top: 1rem;
+  display: inline-block;
+  align-self: center;
+  padding: .8rem 2rem;
+  color: var(--color-letra2);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  max-width: 150px;
+  margin: 20px;
+  border-radius: .5rem;
+  border:.3rem solid var(--color-negro);
+  cursor: pointer;
+  background-color: var(--color-blanco);
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.blog .btn:hover{
+  color: var(--color-negro);
+}
+
+.media {
+  background: var(--color-principal);
+  /*border: 1px solid #e5e5e5;*/
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 20px;
+}
+
+.media-reverse {
+  background: var(--color-principal);
+  /*border: 1px solid #e5e5e5;*/
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 20px;
+}
+
+.media-content {
+  text-align: left;
+  padding-left: 50px;
+  
+}
+
+.media-title{
+  font-size: 32px;
+ 
+}
+
+.media-content .media-description{
+  font-size: 24px;
+  
+}
+
+.media-img-container {
+  padding: 20px 20px 0 20px;
+}
+
+.media-img-item {
+  width: 400px;
+ 
+}
+
+.media1 {
+  margin-bottom: 50px;
+}
+
+/*Footer */
+
+.footer{
+  background-color: var(--color-negro);
+  display: flex;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer .marca{
+  flex-basis: 25%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.footer .marca img{
+  max-width: 300px;
+}
+
+.footer .legal{
+  flex-basis: 25%;
+  padding: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .legal ul li{
+  padding: 5px;
+}
+
+
+.footer .menu{
+  flex-basis: 25%;
+  padding: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.footer .menu ul li{
+  padding: 5px;
+}
+
+.footer .rrss{
+  flex-basis: 25%;
+  padding: 20px;
+}
+
+.rrss ul {
+  display: flex;
+  /*flex-direction: column;*/
+  align-items:center;
+  justify-content: center;
+  padding: 0;
+}
+
+.rrss ul div {
+  width: 20px;
+  height: 5px;
+  background-color: var(--color-letra2);
+  margin: auto;
+}
+
+.rrss ul li {
+  position: relative;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.rrss ul li a{
+  text-decoration: none;
+}
+
+.rrss ul li span {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  background: #2a2a2a;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px !important;
+  transition: 1.5s ease-out;
+}
+
+.rrss ul li:hover span {
+  transition: .3s;
+}
+
+.rrss ul li:nth-child(2):hover span {
+  background: #2C3456 !important;
+  align-self: flex-end;
+}
+
+.rrss ul li:nth-child(3):hover span {
+  background: #6A9AEE !important;
+}
+
+.rrss ul li:nth-child(4):hover span {
+  background: #CC296C !important;
+}
+
+.rrss ul li:nth-child(5):hover span {
+  background: #2C3456 !important;
+}
+
+
+/* Las reglas que estén dentro de la media query se van a aplicar */
+/* solo cuando la ventana del navegador sea menor o igual a 48rem */
+@media (max-width: 48rem) {
+
+    /* Con este selector indicamos que ese estilo debe aplicarse a */
+    /* TODOS los elementos que sean hijos directos de la grilla */
+    .grilla > * {
+      grid-column-end: span 12;
+    }
+  
+    /* El primer valor corresponde al hueco entre filas */
+    /* El segundo valor corresponde al hueco entre columnas */
+    .grilla {
+      grid-gap: 2rem 0;
+    }
+  }
+
+  .ver-mas {
+    grid-column-start: 1;
+  }
+
+ 
+  
+  .titulo {
+    font-size: 3rem;
+  }
