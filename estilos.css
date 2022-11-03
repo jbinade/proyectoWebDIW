@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto:ital,wght@1,300&display=swap');
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 
 
 :root{
@@ -38,13 +38,14 @@ p,ul,li,a{
     background-color: var(--color-negro);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    
   }
 
 .header .logo{
-  flex-basis: 55%;
+  /*flex-basis: 55%;*/
   padding-left: 20px;
 }
 
@@ -56,7 +57,7 @@ p,ul,li,a{
 }
 
 .header .menu{      /*INICIO MENU*/
-  flex-basis: 45%;
+  /*flex-basis: 45%;*/
 }
 
 .header .menu ul{
@@ -197,12 +198,12 @@ p,ul,li,a{
   
 }
 
-.opciones .btnReserva:hover{
+/*.opciones .btnReserva:hover{
   color: var(--color-blanco);
   background-color: var(--color-negro);
   border:.2rem solid var(--color-blanco);
 
-}
+}*/
 
 .intro-img{
   flex-basis: 50%;
@@ -285,7 +286,7 @@ p,ul,li,a{
   border-radius: 5%;
   max-width: 20rem;
   width: 100%;
-  -webkit-transition:all .9s ease; /* Safari y Chrome *//*Para un efecto de zoom en las imagenes*/
+  -webkit-transition:all .9s ease; /**Para un efecto de zoom en las imagenes*/
   -moz-transition:all .9s ease; /* Firefox */
   -o-transition:all .9s ease; /* IE 9 */
   -ms-transition:all .9s ease; /* Opera */
@@ -325,7 +326,7 @@ p,ul,li,a{
       color: var(--color-blanco);
     }
 
- /*BLOG*/ /*Hay una separación entre la sección de tipos de cafe y el blog que no logro eliminar*/
+ /*BLOG*/ 
 .blog {
   display: flex;
   flex-direction: column;
@@ -383,6 +384,10 @@ p,ul,li,a{
 
   padding-left: 10%;
   padding-right: 10%;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
   
 }
 
@@ -398,6 +403,9 @@ p,ul,li,a{
 
   padding-left: 10%;
   padding-right: 10%;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .media-content {
@@ -412,6 +420,7 @@ p,ul,li,a{
 .media-content .media-description{
   font-size: 24px;
   text-align: justify;
+  line-height: 200%;
 }
 
 .media-img-container {
@@ -434,7 +443,6 @@ p,ul,li,a{
   margin-top: 4px;
   padding-bottom: 20px;
 }
-
 
 
 /*FOOTER*/  
@@ -510,6 +518,7 @@ p,ul,li,a{
   width: 50px;
   height: 50px;
   margin: 0 20px;
+  
 }
 
 .rrss ul li a{
@@ -529,6 +538,10 @@ p,ul,li,a{
   transition: 1.5s ease-out;
 }
 
+.facebook img,.twitter img,.instagram img{
+  background-color: #fff;
+}
+
 .rrss ul li:hover span {
   transition: .3s;
 }
@@ -546,9 +559,6 @@ p,ul,li,a{
   background: #CC296C !important;
 }
 
-.rrss ul li:nth-child(5):hover span {
-  background: #2C3456 !important;
-}
 
 
 /* Las reglas que estén dentro de la media query se van a aplicar */
@@ -561,8 +571,6 @@ p,ul,li,a{
       grid-column-end: span 12;
     }
   
-    /* El primer valor corresponde al hueco entre filas */
-    /* El segundo valor corresponde al hueco entre columnas */
     .grilla {
       grid-gap: 2rem 0;
     }
