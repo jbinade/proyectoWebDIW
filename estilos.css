@@ -219,7 +219,67 @@ p,ul,li,a{
 }
 
 /*APARTADO INICIO2*/
-      /*AQUÍ IRIA EL APARTADO QUE FALTA*/
+
+.intro-2 {
+  background-color: var(--color-negro);
+  margin: 0 auto;
+  color: var(--color-blanco);
+}
+
+.intro-2-datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 70px;
+}
+
+.intro-2-span {
+  display: block;
+}
+
+.intro-2-plus {
+  color: var(--color-letra2);
+  font-size: 40px;
+}
+
+.intro-2-contenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-2-img {
+  flex: 1;
+  padding-left: 50px;
+  margin-bottom: 100px;
+}
+
+.imagen-paleta {
+  border-radius: 5%;
+  
+}
+
+.intro-2-texto {
+  flex: 1;
+
+}
+
+.intro-2-texto h2{
+  font-size: 45px;
+}
+
+.intro-2-texto p {
+  font-size: 28px;
+  line-height: 50px;
+  padding-right: 50px;
+  text-align: justify;
+}
+
 /*FIN INICIO2*/
 
 /*APARTADO CAFÉS*/
